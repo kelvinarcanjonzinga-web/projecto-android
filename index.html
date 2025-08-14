@@ -9,6 +9,7 @@
 
         body{
             background-color: beige;
+            
         }
 
         header{
@@ -34,12 +35,18 @@
             font-family: 'Times New Roman', Times, serif;
         }
 
-        header > nav {
+        nav {
             display: flex;
             gap: 5px;
+            background-color: rgb(6, 54, 6);
+            margin-right: -17px;
+            margin-left: -8px;
+            padding-bottom: 10px;
+            padding-top: 3px;
+            
         }
 
-        header > nav > a {
+        nav > a {
             color: white;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 16px;
@@ -50,18 +57,24 @@
             transition-duration: 1s;
         }
 
-        header > nav > a:hover {
+        nav > a:hover {
             text-decoration: underline;
             color: rgb(56, 155, 155);
         }
 
         section{
             background-color: white;
-            margin-top: 0px;
-            margin-left: 133px;
-            margin-right: 133px;
-            padding-top: 23px;
+            margin: 0 auto;
+            padding: 23px 15px;
+            max-width: 900px;
         }
+
+        @media (max-width: 800px) {
+        section {
+                margin: 0;
+                padding: 15px 10px;
+    }
+}
 
         section > h1 {
             background-color: white;
@@ -130,13 +143,14 @@
             display: block;
         }
 
-        section#secundária > img {
-            width: 50%;
-            height: 300px;
-            display: block;
-            margin: 0 auto;
-                
+        @media (max-width: 800px) {
+            section#secundária > img {
+                     width: 100%;
+                     height: auto;
+       }
+
         }
+
 
         section#secundária > iframe {
             width: 100%;
@@ -154,8 +168,9 @@
             margin-top: 30px;
             margin-right: 35px;
             margin-left: 35px;
+            padding-right: 0px;
             padding-top: 13px;
-            padding-left: 25px;
+            padding-left: 0px;
             padding-bottom: 13px;
             border-top-left-radius: 12px;
             border-top-right-radius: 12px;
@@ -236,10 +251,10 @@
     <header>
         <h1>CURIOSIDADES DE TECNOLOGIA</h1>
         <p>Tudo aquilo que você sempre quis saber sobre o mundo Tech,em um único lugar</p>
-        <nav>
+    </header>
+    <nav>
             <a href="#" target="_blank">Home</a>    <a href="#" target="_blank">Notícias</a>    <a href="#" target="_blank">Curiosidades </a>   <a href="#" target="_blank">Fale Conosco</a>
         </nav>
-    </header>
     <main>
         <section>
             <h1>𝐇𝐢𝐬𝐭𝐨́𝐫𝐢𝐚 𝐝𝐨 𝐦𝐚𝐬𝐜𝐨𝐭𝐞 𝐝𝐨 𝐀𝐧𝐝𝐫𝐨𝐢𝐝</h1>
